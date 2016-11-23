@@ -1,15 +1,15 @@
 
-<table class="table is-bordered">
+<table id="setting-table" class="table is-bordered">
   <thead>
     <tr>
-      <th>Name</th>
+      <th>Users</th>
   
     </tr>
   </thead>
   
   <tbody>
     <tr>
-      <td><ul class ="list"> All Users
+      <td><ul class ="list"> 
 	<li ng-repeat = "form in list.forms" ui-sref="root.about({_id:form._id})"> <i id ="display" class="fa fa-user" aria-hidden="true"></i> {{ form.name}}</li>
 </ul>
 <div class="content" ui-view></div>

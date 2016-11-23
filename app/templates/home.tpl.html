@@ -1,5 +1,21 @@
 
-<ul class ="list"> List
-	<li ng-repeat = "form in list.forms" ui-sref="root.about({_id:form._id})"> <span class="display">Name:</span> {{ form.name}}</li>
+<table class="table is-bordered">
+  <thead>
+    <tr>
+      <th>Name</th>
+  
+    </tr>
+  </thead>
+  
+  <tbody>
+    <tr>
+      <td><ul class ="list"> All Users
+	<li ng-repeat = "form in list.forms" ui-sref="root.about({_id:form._id})"> <i id ="display" class="fa fa-user" aria-hidden="true"></i> {{ form.name}}</li>
 </ul>
 <div class="content" ui-view></div>
+</td>
+</tr>
+</tbody>
+     
+      
+    

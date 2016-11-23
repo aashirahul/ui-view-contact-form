@@ -4,7 +4,7 @@ vm.form= {};
  function getdata(){
 	   		$http({
 	   			method: 'GET',
-				 url: 'https://class-server.herokuapp.com/collections/arielmessages/'+$stateParams._id
+				 url: 'https://class-server.herokuapp.com/collections/arielcontacts/'+$stateParams._id
 				}).then(function (response){
 					vm.form = response.data;
 					console.log(vm.form);	

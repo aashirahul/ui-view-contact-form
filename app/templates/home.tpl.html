@@ -10,7 +10,7 @@
   <tbody>
     <tr>
       <td><ul class ="list"> 
-	<li ng-repeat = "form in list.forms" ui-sref="root.about({_id:form._id})"> <i id ="display" class="fa fa-user" aria-hidden="true"></i> {{ form.name}}</li>
+	<li id = "style-list" ng-repeat = "form in list.forms" ui-sref="root.about({_id:form._id})"> <i id ="display" class="fa fa-user" aria-hidden="true"></i> {{ form.name}}</li>
 </ul>
 <div class="content" ui-view></div>
 </td>

@@ -3,17 +3,20 @@ function routerConfig ($stateProvider, $urlRouterProvider) {
     .state('root', {
       abstract: true,
       templateUrl: 'templates/layout.tpl.html'
-      //controller: 'LayoutController as layout'
+      
     })
     .state('root.home', {
       url: '/',
-      templateUrl: 'templates/home.tpl.html'
-      //controller: 'HomeController as home'
+      templateUrl: 'templates/home.tpl.html',
+      controller: 'HomeController as list'
     })
     .state('root.about', {
       url: '/about',
-      templateUrl: 'templates/about.tpl.html'
-      //controller: 'AboutController as about'
+      templateUrl: 'templates/about.tpl.html',
+      controller: 'AboutController as about',
+      params:{
+        _id:null
+      }
     })
     
     .state('root.add', {

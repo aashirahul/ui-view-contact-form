@@ -1,5 +1,5 @@
 
-<ul class ="list"> <span id="title"> List</span>
-       <li ng-repeat = "form in forms"> <span class="display">Name:</span> 
-       </li>
-       </ul>
+<ul class ="list"> List
+	<li ng-repeat = "form in list.forms" ui-sref="root.about({_id:form._id})"> <span class="display">Name:</span> {{ form.name}}</li>
+</ul>
+<div class="content" ui-view></div>

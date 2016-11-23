@@ -1,6 +1,28 @@
-<ul class ="list"> <span id="title"> Messages
-       <li ng-repeat = "form in forms"> <span class="display">Name:</span> {{ form.name }} 
-        <span class="display">Email:</span> {{form.email}}  
-        <span class="display">Website:</span> {{form.website}}
-        <span class="display">Message:</span> {{form.message}}</li>
-       </ul>
+<div class="card">
+  <div class="card-image">
+    <figure class="image is-4by3">
+      <img src="http://placehold.it/300x225" alt="">
+    </figure>
+  </div>
+  <div class="card-content">
+   
+      <div class="media-content">
+       
+		<div class="input"><span class="display">Name:</span> {{ about.form.name }}</div>
+    	<div class="input"><span class="display">Email:</span> {{about.form.email}}</div>
+        <div class="input"><span class="display">Website:</span> {{about.form.phone}}</div>
+        <div class="input"><span class="display">City:</span> {{about.form.city}}</div>
+     
+      </div>
+    </div>
+
+    <div class="content">
+      
+    </div>
+  </div>
+</div>
+
+
+
+<a class="button is-primary"><button type="button" ng-click="about.back()"> Back</button>
+</a>

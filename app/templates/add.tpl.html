@@ -1,0 +1,20 @@
+<form ng-submit = "addForm.submitForm()">
+
+        <label class="label"> Name </label>
+          <input class="input" type="text" ng-model= "addForm.form.name">
+          <span class="error"> {{ error.name}} </span>
+
+        <label class="label"> Email </label>
+          <input class="input" type="text" ng-model = "addForm.form.email"/>
+          
+         
+        <label class="label"> Phone : </label>
+          <input class="input" type="text" ng-model = "addForm.form.phone"/>
+          
+          
+        <label class="label"> City </label>
+          <input class="input" type="text" ng-model = "addForm.form.city"/>
+          
+            <input class="button" type="submit" id="submit" value="Submit" />
+          
+      </form>

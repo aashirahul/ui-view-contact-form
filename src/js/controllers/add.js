@@ -4,7 +4,7 @@ function AddController($http,$state){
 	 vm.form = {};
 
 	vm.submitForm = function(){
-		$http.post('https://class-server.herokuapp.com/collections/arielmessages',vm.form).then(function(response){
+		$http.post('https://class-server.herokuapp.com/collections/arielcontacts',vm.form).then(function(response){
 			vm.form={}
 			$state.go('root.home');
 

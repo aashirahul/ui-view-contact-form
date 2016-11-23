@@ -4,7 +4,7 @@ function HomeController($http){
 	 function getdata(){
 	   		$http({
 	   			method: 'GET',
-				 url: 'https://class-server.herokuapp.com/collections/arielmessages'
+				 url: 'https://class-server.herokuapp.com/collections/arielcontacts'
 				}).then(function (response){
 					vm.forms = response.data;
 					console.log(vm.forms);	
